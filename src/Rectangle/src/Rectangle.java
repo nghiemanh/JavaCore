@@ -5,7 +5,6 @@ public class Rectangle {
     private  double height;
 
     public Rectangle(){
-
     };
 
     public Rectangle(double width, double height) {
@@ -44,6 +43,4 @@ public class Rectangle {
         System.out.println("Perimeter: "+ getPerimeter() );
         System.out.println("************************************");
     }
-
-
 }

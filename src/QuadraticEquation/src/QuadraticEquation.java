@@ -7,9 +7,7 @@ public class QuadraticEquation {
     private double b;
     private double c;
 
-
-    public QuadraticEquation(){
-
+    public QuadraticEquation() {
     }
 
     public QuadraticEquation(double a, double b, double c) {
@@ -17,7 +15,6 @@ public class QuadraticEquation {
         this.b = b;
         this.c = c;
     }
-
 
     public double getA() {
         return a;
@@ -43,7 +40,7 @@ public class QuadraticEquation {
         this.c = c;
     }
 
-    public void getInfo(){
+    public void getInfo() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap a: ");
         a = sc.nextDouble();
@@ -51,24 +48,21 @@ public class QuadraticEquation {
         b = sc.nextDouble();
         System.out.print("Nhap c: ");
         c = sc.nextDouble();
-
     }
+
     public void getDiscriminant() {
         double root1;
         double root2;
-        double delta = (Math.pow(b, 2)) - 4 * a * c ;
-        if (delta <0){
+        double delta = (Math.pow(b, 2)) - 4 * a * c;
+        if (delta < 0) {
             System.out.println("The equation has no roots");
-        }
-        else if (delta == 0 ){
-            System.out.println("Root1: "  + -b/(2*a));
-        }
-        else  {
-            root1 = (-b + Math.pow(delta,0.5))/(2*a);
-            root2 = (-b - Math.pow(delta,0.5))/(2*a);
-            System.out.println("Root1: " +root1);
-            System.out.println("Root2: " +root2);
+        } else if (delta == 0) {
+            System.out.println("Root1: " + -b / (2 * a));
+        } else {
+            root1 = (-b + Math.pow(delta, 0.5)) / (2 * a);
+            root2 = (-b - Math.pow(delta, 0.5)) / (2 * a);
+            System.out.println("Root1: " + root1);
+            System.out.println("Root2: " + root2);
         }
     }
-
 }

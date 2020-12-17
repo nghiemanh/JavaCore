@@ -1,16 +1,15 @@
 package Fan.src;
 
 public class Fan {
-    final static int slow = 1;
-    final static int medium = 2;
-    final static int fast = 3;
-    int speed = slow;
+    final static int SLOW = 1;
+    final static int MEDIUM = 2;
+    final static int FAST = 3;
+    int speed = SLOW;
     private double radius;
-    private String color ="blue";
+    private String color = "blue";
     private boolean on = false;
 
-    public  Fan(){
-
+    public Fan() {
     }
 
     public Fan(int speed, double radius, String color, boolean on) {
@@ -29,15 +28,15 @@ public class Fan {
     }
 
     public static int getSlow() {
-        return slow;
+        return SLOW;
     }
 
     public static int getMedium() {
-        return medium;
+        return MEDIUM;
     }
 
     public static int getFast() {
-        return fast;
+        return FAST;
     }
 
     public int getSpeed() {
